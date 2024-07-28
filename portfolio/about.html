@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Hideaki Oda" />
+    <meta name="description" content="自己紹介やエンジニアの経歴を紹介していきます。" />
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/9561aaa22c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="destyle.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" type="image/png" href="">
+    <link rel="icon" href="">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_logo">
+                <img src="img/HideakiOda.png" alt="Portfolio">
+            </div>
+            <div class="header_nav">
+                <nav class="gnav">
+                    <ul class="gnav_list">
+                        <li class="gnav_item"><a class="gnav_link" href="index.html">Home</a></li>
+                        <li class="gnav_item"><a class="gnav_link gnav_link--active" href="">About</a></li>
+                        <li class="gnav_item"><a class="gnav_link" href="works.html">Works</a></li>
+                    </ul>
+                </nav>
+                <button type="button" id="js-btn-menu" class="btn-menu">
+                    <span class="btn-menu__line"></span>
+                </button>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="Works">
+                <div class="container">
+                    <div class="service_heading">
+                        <h1 class="heading-primary">About</h1>
+                    </div>
+                    <div class="about-list">
+                        <div class="about-list__item">
+                            <div class="service-list__body">
+                                <div class="service-list__title">プロフィール</div>
+                                <div class="service-list__text">
+                                    <p>名前:小田 秀明</p>
+                                    <p>生年月日:1999年5月31日</p>
+                                    <p>出身地:横浜</p>
+                                    <p>趣味:サッカー、K-POP</p>
+                                    <p>2019年に薬学系の大学に入学</p>
+                                    <p>2023年に新卒でITのベンチャー企業に入社</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>現在は、フロントエンド、バックエンド、データベース、インフラなどの様々な技術領域に触れながら、開発に携わっています。</p>
+                    <p>将来はPM（プロジェクトマネージャー）として、上流工程にも携わりたいと考えています。</p>
+                </div>
+            </section>
+            <section class="Qualification">
+                <div class="container">
+                    <div class="qualification_heading">
+                      <h2 class="heading-primary">Qualification</h2>
+                    </div>
+                    <div class="qualification-list__item">
+                        <div class="qualification-list__body">
+                          <div class="qualification-list__title">資格</div>
+                            <p class="qualification-list__text">AWS Certified Cloud Practitioner (2023年取得)</p>
+                            <p class="qualification-list__text">基本情報技術者試験 (2024年取得)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="page-top" id="js-page-top">
+                <span class="material-icons-outlined">expand_less</span>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer-nav">
+                    <ul class="footer-nav_list">
+                        <li class="footer-nav_item"><a class="footer-nav_link" href=".">Home</a></li>
+                        <li class="footer-nav_item"><a class="footer-nav_link" href=".">About</a></li>
+                        <li class="footer-nav_item"><a class="footer-nav_link" href=".">Work</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_copyright">&copy;Portfolio</div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type='text/javascript' src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+html {
+  line-height: 1.15; /* 1 */
+
+  -webkit-tap-highlight-color: transparent; /* 3*/
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+  margin: 0;
+} 
+
+ main {
+  display: block;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
