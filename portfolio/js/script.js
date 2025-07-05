@@ -44,11 +44,17 @@ $(function () {
   });
 
     // スクロールイベント
-    $(".works-list").scroll(function(){
-      // scrollLeftメソッドの結果を表示
-      if ($(this).scrollLeft() > 20) {
-        $(".works-list__scroll").fadeOut();
+  $(".works-list").scroll(function(){
+    // scrollLeftメソッドの結果を表示
+    if ($(this).scrollLeft() > 20) {
+      $(".works-list__scroll").fadeOut();
       }
-    });
+  });
+
+  $('#particles').particleground({
+    dotColor: '#b7eef0',
+    lineColor: '#b7eef0',
+    particleRadius: 10
+  });
 
 });
