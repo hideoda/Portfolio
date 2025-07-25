@@ -51,10 +51,19 @@ $(function () {
       }
   });
 
+  //ページ上部にスクロール
+  $(function () {
+    $('#js-page-top').on('click', function () {
+      $('html, body').animate({ scrollTop: 0 }, 500); // 500はスクロール速度（ms）
+      return false;
+    });
+  });
+
   $('#particles').particleground({
-    dotColor: '#b7eef0',
-    lineColor: '#b7eef0',
-    particleRadius: 10
+    dotColor: '#0525cd73',
+    lineColor: '#0525cd73',
+    particleRadius: 10,
+    proximity: 200,
   });
 
 });

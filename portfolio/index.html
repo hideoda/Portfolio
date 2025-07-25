@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/9561aaa22c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link href="destyle.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <link rel="apple-touch-icon" type="image/png" href="">
@@ -21,7 +21,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="header_logo">
-                <img src="img/HideakiOda.png" alt="Portfolio">
+                <img src="img/HideakiOda_blue.png" alt="Portfolio">
             </div>
             <div class="header_nav">
                 <nav class="gnav">
@@ -39,26 +39,28 @@
     
         <div class="mv">
             <div class="mv_titleArea">
-              <div id="particles"></div>
+                <div id="particles"></div>
                 <h2 class="mv_title">Portfolio</h2>
-                <!-- <p class="mv_subtitle"></p> -->
             </div>
         </div>
         
-        <main class="content">
+        <!-- <main class="content"> -->
             <section class="Profile">
+                <div class="container">
                 <!-- <div class="container"> -->
                     <div class="profile_inner">
                         <div class="profile_heading">
                             <h2 class="heading-primary">About</h2>
                         </div>
-                        <div class="qualification-list__item">
-                            <div class="qualification-list__body">
+                        <div class="profile-index-wrapper">
+                        <div class="profile-index-list__item">
+                            <div class="qualification-list__body" data-modal="profile">
                                 <div class="qualification-list__title">プロフィール</div>
                                 <p class="qualification-list__text">名前:小田秀明</p>
                                 <p class="qualification-list__text">生年月日:1999年5月31日</p>
                                 <p class="qualification-list__text">職業:システムエンジニア</p>
                             </div>
+                        </div>
                         </div>
                         <div class="profile_body">
                             <div class="profile_list">
@@ -72,48 +74,64 @@
                                     <li class="profile_list_item">
                                         <div class="profile_list_date">
                                             <time datetime="2020-02-10" class="profile_date">2023.04</time>
-                                            新卒でITのベンチャー企業に入社
+                                            新卒でIT企業に入社
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
+                        <div class="p-service__link">
+                            <a href="about.html" class="c-btn">more</a>
+                        </div>
                     </div>
+                    
+                </div>
                 <!-- </div> -->
             </section>
             <section class="Works">
+                <div class="works_container">
                 <div class="container">
                     <div class="works_heading">
                         <h2 class="heading-primary">Works</h2>
                     </div>
                     <div class="home-works-list">
-                        <div class="home-works-list__item">
+                        <a href="works.html#works1" class="home-works-list__item">
                             <div class="home-works-list__body">
-                                <div class="home-works-list__title">小売業界</div>
+                                <div class="home-works-list__title">
+                                    <img src="img/retail.svg" alt="アイコン" class="title-icon">小売業界
+                                </div>
                                 <div class="home-works-list__text">
-                                    <p>新規サイトの開発をしていました。</p>
+                                    <p>小売業界向けWebシステムの新規開発</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="home-works-list__item">
+                        </a>
+                        <a href="works.html#works2" class="home-works-list__item">
                             <div class="home-works-list__body">
-                                <div class="home-works-list__title">旅行業界</div>
+                                <div class="home-works-list__title">
+                                    <img src="img/car.svg" alt="アイコン" class="title-icon">自動車関連業界
+                                </div>
                                 <div class="home-works-list__text">
-                                    <p>新規サイトの開発をしていました。</p>
+                                    <p>自動車関連企業の新規Webシステムの開発</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="home-works-list__item">
+                        </a>
+                        <a href="works.html#works3" class="home-works-list__item">
                             <div class="home-works-list__body">
-                                <div class="home-works-list__title">人材業界</div>
+                                <div class="home-works-list__title">
+                                    <img src="img/person.svg" alt="アイコン" class="title-icon">人材業界
+                                </div>
                                 <div class="home-works-list__text">
-                                    <p>Webアプリケーションの運用・保守をしていました。</p>
+                                    <p>人材業界向けのWebアプリケーションのリプレース</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    <div class="p-service__link">
+                        <a href="works.html" class="c-btn">more</a>
                     </div>
                 </div>
-    </div>
+            </div>
+    
     </section>
     <section class="Contact">
         <div class="container">
@@ -128,7 +146,7 @@
     <div class="page-top" id="js-page-top">
         <span class="material-icons-outlined">expand_less</span>
     </div>
-    </main>
+    <!-- </main> -->
 
     <footer class="footer">
         <div class="container">
@@ -142,6 +160,9 @@
             <div class="footer_copyright">&copy;Portfolio</div>
         </div>
     </footer>
+
+    <div class="modal" id="modal">
+    </div>
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
