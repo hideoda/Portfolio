@@ -413,6 +413,16 @@ a.home-works__item {
   color: #444;
 }
 
+.career__text a {
+  color: #0525cd;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.career__text a:hover {
+  color: #0056b3;
+}
+
 /*--------------------------------
  Works
 ---------------------------------*/
@@ -469,11 +479,11 @@ a.home-works__item {
   background-size: 24px 40px;
   transform: translateY(-50%);
   margin-top: 0;
-  color: black;
+  color: #0525cd;
 }
 
 .swiper-pagination-bullet-active {
-  background: black;
+  background: linear-gradient(to right, #0525cd 0%, #1f0d65 51%, #0525cd 100%);
 }
 
 /*--------------------------------
@@ -567,7 +577,7 @@ a.home-works__item {
   align-items: flex-start;
   justify-content: space-between;
   width: 48%;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .skill__img {
@@ -632,13 +642,49 @@ a.home-works__item {
   height: 100%;
   content: "";
   border-radius: 3px;
-  background-color: #333;
+  background: linear-gradient(to right, #0525cd 0%, #1f0d65 51%, #0525cd 100%);
 }
 
 .article__body p {
   font-size: 15px;
   line-height: 1.8;
   margin-bottom: 30px;
+}
+
+.tab-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #eee 0%, #d0e0ff 51%, #eee 100%);
+  background-size: 200% auto;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: linear-gradient(to right, #0525cd 0%, #1f0d65 51%, #0525cd 100%);
+  color: #fff;
+  background-size: 200% auto;
+  transition: 0.3s;
+}
+
+.tab-button:hover {
+  text-decoration: none;
+  background-position: right center;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
 }
 
 /*--------------------------------
@@ -696,66 +742,6 @@ a.home-works__item {
 .sns-button li a[class="fa-brands fa-linkedin"]:hover::before {
   background-color: #0077B5;
   color: #ffffff;
-}
-
-/*--------------------------------
- Game
----------------------------------*/
-
-.button_game {
-  margin: 10px 5px;
-  box-shadow: none !important;
-}
-
-.img_game {
-  width: 100px;
-}
-
-.animation {
-  position: absolute;
-  top: 0;
-  /* left: 20%;  */
-  /* transform: translateX(-50%); */
-  animation-name: img_game;
-  animation-duration: 0.3s;
-  animation-iteration-count: infinite;
-  opacity: 0;
-}
-
-.animation.rock {
-  animation-delay: 0s;
-}
-
-.animation.scissors {
-  animation-delay: 0.1s;
-}
-
-.animation.paper {
-  animation-delay: 0.2s;
-}
-
-.img-area {
-  position: relative;
-  margin-bottom: 10px;
-  height: 100px;
-}
-
-.text_game {
-  font-size: 50px;
-}
-
-@keyframes img_game {
-  0% {
-    opacity: 0;
-  }
-
-  25% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
 }
 
 /*--------------------------------
@@ -1104,10 +1090,6 @@ a.home-works__item {
   .article__body h3 {
     font-size: 16px;
     padding-left: .8em;
-  }
-
-  .article__body h3:not(:first-child) {
-    margin-top: 30px;
   }
 
   .article__body p {

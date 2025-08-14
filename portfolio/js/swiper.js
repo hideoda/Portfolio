@@ -1,7 +1,9 @@
 $(function () {
     const swiper = new Swiper(".swiper", {
 
-        loop: true,
+        loop: false,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
 
         pagination: {
             el: ".swiper-pagination"
@@ -11,6 +13,5 @@ $(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
     });
 });
