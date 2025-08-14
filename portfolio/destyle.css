@@ -1,15 +1,18 @@
 html {
-  line-height: 1.15; /* 1 */
+  line-height: 1.15;
+  /* 1 */
 
-  -webkit-tap-highlight-color: transparent; /* 3*/
-  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 body {
   margin: 0;
-} 
+}
 
- main {
+main {
   display: block;
 }
 

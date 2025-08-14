@@ -20,15 +20,15 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header_logo">
+            <div class="header__logo">
                 <img src="img/HideakiOda_blue.png" alt="Portfolio">
             </div>
-            <div class="header_nav">
+            <div class="header__nav">
                 <nav class="gnav">
-                    <ul class="gnav_list">
-                        <li class="gnav_item"><a class="gnav_link gnav_link--active" href="">Home</a></li>
-                        <li class="gnav_item"><a class="gnav_link" href="about.html">About</a></li>
-                        <li class="gnav_item"><a class="gnav_link" href="works.html">Works</a></li>
+                    <ul class="gnav__list">
+                        <li class="gnav__item"><a class="gnav__link gnav__link--active" href="">Home</a></li>
+                        <li class="gnav__item"><a class="gnav__link" href="about.html">About</a></li>
+                        <li class="gnav__item"><a class="gnav__link" href="works.html">Works</a></li>
                     </ul>
                 </nav>
                 <button type="button" id="js-btn-menu" class="btn-menu">
@@ -36,132 +36,131 @@
                 </button>
             </div>
         </header>
-    
+
         <div class="mv">
-            <div class="mv_titleArea">
+            <div class="mv__title-area">
                 <div id="particles"></div>
-                <h2 class="mv_title">Portfolio</h2>
+                <h2 class="mv__title">Portfolio</h2>
             </div>
         </div>
-        
-        <!-- <main class="content"> -->
-            <section class="Profile">
-                <div class="container">
-                <!-- <div class="container"> -->
-                    <div class="profile_inner">
-                        <div class="profile_heading">
-                            <h2 class="heading-primary">About</h2>
+
+        <main class="content">
+            <section class="home-about">
+                <div class="home-about__container">
+
+                    <div class="home-about__inner">
+                        <div class="home-about__heading">
+                            <h2>About</h2>
                         </div>
-                        <div class="profile-index-wrapper">
-                        <div class="profile-index-list__item">
-                            <div class="qualification-list__body" data-modal="profile">
-                                <div class="qualification-list__title">プロフィール</div>
-                                <p class="qualification-list__text">名前:小田秀明</p>
-                                <p class="qualification-list__text">生年月日:1999年5月31日</p>
-                                <p class="qualification-list__text">職業:システムエンジニア</p>
+                        <div class="home-about__profile-wrapper">
+                            <div class="home-about__profile-item">
+                                <div class="home-about__profile-body">
+                                    <div class="home-about__profile-title">Profile</div>
+                                    <p class="home-about__profile-text">名前:小田秀明</p>
+                                    <p class="home-about__profile-text">生年月日:1999年5月31日</p>
+                                    <p class="home-about__profile-text">職業:システムエンジニア</p>
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        <div class="profile_body">
-                            <div class="profile_list">
-                                <ul class="profile_list_list">
-                                    <li class="profile_list_item">
-                                        <div class="profile_list_date">
-                                            <time datetime="2020-02-10" class="profile_date">2019.04</time>
+                        <div class="home-about__history">
+                            <div class="home-about__history-body">
+                                <ul class="home-about__history-list">
+                                    <li class="home-about__history-item">
+                                        <div class="home-about__history-date">
+                                            <time datetime="2020-02-10" class="home-about__date">2019.04</time>
                                             薬学系の大学に入学
                                         </div>
                                     </li>
-                                    <li class="profile_list_item">
-                                        <div class="profile_list_date">
-                                            <time datetime="2020-02-10" class="profile_date">2023.04</time>
+                                    <li class="home-about__history-item">
+                                        <div class="home-about__history-date">
+                                            <time datetime="2020-02-10" class="home-about__date">2023.04</time>
                                             新卒でIT企業に入社
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="p-service__link">
-                            <a href="about.html" class="c-btn">more</a>
+                        <div class="blue-btn">
+                            <a href="about.html" class="more-btn">more</a>
                         </div>
                     </div>
-                    
+
                 </div>
-                <!-- </div> -->
             </section>
-            <section class="Works">
-                <div class="works_container">
-                <div class="container">
-                    <div class="works_heading">
-                        <h2 class="heading-primary">Works</h2>
-                    </div>
-                    <div class="home-works-list">
-                        <a href="works.html#works1" class="home-works-list__item">
-                            <div class="home-works-list__body">
-                                <div class="home-works-list__title">
-                                    <img src="img/retail.svg" alt="アイコン" class="title-icon">小売業界
+            <section class="home-works">
+                <div class="home-works__container">
+                    <div class="home-works__inner">
+                        <div class="home-works__heading">
+                            <h2>Works</h2>
+                        </div>
+                        <div class="home-works__list">
+                            <a href="works.html#works1" class="home-works__item">
+                                <div class="home-works__body">
+                                    <div class="home-works__title">
+                                        <img src="img/retail.svg" alt="アイコン" class="home-works__title-icon">小売業界
+                                    </div>
+                                    <div class="home-works__text">
+                                        <p>小売業界向けWebシステムの新規開発</p>
+                                    </div>
                                 </div>
-                                <div class="home-works-list__text">
-                                    <p>小売業界向けWebシステムの新規開発</p>
+                            </a>
+                            <a href="works.html#works2" class="home-works__item">
+                                <div class="home-works__body">
+                                    <div class="home-works__title">
+                                        <img src="img/car.svg" alt="アイコン" class="home-works__title-icon">自動車関連業界
+                                    </div>
+                                    <div class="home-works__text">
+                                        <p>自動車関連企業の新規Webシステムの開発</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="works.html#works2" class="home-works-list__item">
-                            <div class="home-works-list__body">
-                                <div class="home-works-list__title">
-                                    <img src="img/car.svg" alt="アイコン" class="title-icon">自動車関連業界
+                            </a>
+                            <a href="works.html#works3" class="home-works__item">
+                                <div class="home-works__body">
+                                    <div class="home-works__title">
+                                        <img src="img/person.svg" alt="アイコン" class="home-works__title-icon">人材業界
+                                    </div>
+                                    <div class="home-works__text">
+                                        <p>人材業界向けのWebアプリケーションのリプレース</p>
+                                    </div>
                                 </div>
-                                <div class="home-works-list__text">
-                                    <p>自動車関連企業の新規Webシステムの開発</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="works.html#works3" class="home-works-list__item">
-                            <div class="home-works-list__body">
-                                <div class="home-works-list__title">
-                                    <img src="img/person.svg" alt="アイコン" class="title-icon">人材業界
-                                </div>
-                                <div class="home-works-list__text">
-                                    <p>人材業界向けのWebアプリケーションのリプレース</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="p-service__link">
-                        <a href="works.html" class="c-btn">more</a>
+                            </a>
+                        </div>
+                        <div class="blue-btn">
+                            <a href="works.html" class="more-btn">more</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-    </section>
-    <section class="Contact">
-        <div class="container">
-            <div class="contact_heading">
-                <h2 class="heading-primary">Contact</h2>
-            </div>
-            <ul class="sns-button">
-                <li><a class="fa-brands fa-instagram" href="https://www.instagram.com/hide127_139.e.l/"></a></li>
-            </ul>
-        </div>
-    </section>
-    <div class="page-top" id="js-page-top">
-        <span class="material-icons-outlined">expand_less</span>
-    </div>
-    <!-- </main> -->
 
-    <footer class="footer">
-        <div class="container">
-            <nav class="footer-nav">
-                <ul class="footer-nav_list">
-                    <li class="footer-nav_item"><a class="footer-nav_link" href=".">Home</a></li>
-                    <li class="footer-nav_item"><a class="footer-nav_link" href=".">About</a></li>
-                    <li class="footer-nav_item"><a class="footer-nav_link" href=".">Work</a></li>
-                </ul>
-            </nav>
-            <div class="footer_copyright">&copy;Portfolio</div>
-        </div>
-    </footer>
+            </section>
+            <section class="contact">
+                <div class="contact__container">
+                    <div class="contact__heading">
+                        <h2>Contact</h2>
+                    </div>
+                    <ul class="sns-button">
+                        <li><a class="fa-brands fa-linkedin"
+                                href="https://www.linkedin.com/in/hideaki-oda-2a6676373/"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <div class="page-top" id="js-page-top">
+                <span class="material-icons-outlined">expand_less</span>
+            </div>
+        </main>
 
-    <div class="modal" id="modal">
+        <footer class="footer">
+            <div class="footer__container">
+                <nav class="footer__nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a class="footer__nav-link" href=".">Home</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href=".">About</a></li>
+                        <li class="footer__nav-item"><a class="footer__nav-link" href=".">Work</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">&copy;Portfolio</div>
+            </div>
+        </footer>
+
     </div>
 
     </div>
@@ -169,7 +168,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type='text/javascript' src="js/jquery.particleground.min.js"></script>
     <script type='text/javascript' src="js/script.js"></script>
-    
+    <script type='text/javascript' src="js/particleground.js"></script>
 </body>
 
 </html>
