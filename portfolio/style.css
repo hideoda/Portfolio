@@ -233,7 +233,6 @@ img {
   margin-right: 20px;
 }
 
-/* タイトルとテキスト */
 .home-about__profile-title {
   font-weight: bold;
   font-size: 18px;
@@ -329,7 +328,6 @@ a.home-works__item {
   text-align: center;
 }
 
-/* PCサイズで横並びにする */
 @media screen and (min-width: 768px) {
   .profile-list {
     display: flex;
@@ -340,7 +338,6 @@ a.home-works__item {
   .profile-list__item {
     width: 48%;
     margin-bottom: 0;
-    /* 横並びなので不要 */
   }
 }
 
@@ -529,7 +526,6 @@ a.home-works__item {
   font-size: 14px;
 }
 
-/* PCサイズで横並びにする */
 @media screen and (min-width: 768px) {
   .personal-info__list {
     display: flex;
@@ -540,7 +536,6 @@ a.home-works__item {
   .personal-info__item {
     width: 48%;
     margin-bottom: 0;
-    /* 横並びなので不要 */
   }
 }
 
