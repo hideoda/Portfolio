@@ -30,6 +30,12 @@ ol {
   list-style: none;
 }
 
+.custom-list {
+  margin: 1em 0; 
+  padding-left: 1.5em; 
+  list-style: disc; 
+}
+
 /* Text-level semantics */
 /* ============================================ */
 
